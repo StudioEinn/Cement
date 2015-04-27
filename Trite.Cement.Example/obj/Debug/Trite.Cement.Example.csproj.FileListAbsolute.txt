@@ -1,0 +1,8 @@
+c:\users\chris\documents\visual studio 2013\Projects\Trite.Cement\Trite.Cement.Example\bin\Debug\Trite.Cement.Example.exe.config
+c:\users\chris\documents\visual studio 2013\Projects\Trite.Cement\Trite.Cement.Example\bin\Debug\Trite.Cement.Example.exe
+c:\users\chris\documents\visual studio 2013\Projects\Trite.Cement\Trite.Cement.Example\bin\Debug\Trite.Cement.Example.pdb
+c:\users\chris\documents\visual studio 2013\Projects\Trite.Cement\Trite.Cement.Example\bin\Debug\Trite.Cement.dll
+c:\users\chris\documents\visual studio 2013\Projects\Trite.Cement\Trite.Cement.Example\bin\Debug\Trite.Cement.pdb
+c:\users\chris\documents\visual studio 2013\Projects\Trite.Cement\Trite.Cement.Example\obj\Debug\Trite.Cement.Example.csprojResolveAssemblyReference.cache
+c:\users\chris\documents\visual studio 2013\Projects\Trite.Cement\Trite.Cement.Example\obj\Debug\Trite.Cement.Example.exe
+c:\users\chris\documents\visual studio 2013\Projects\Trite.Cement\Trite.Cement.Example\obj\Debug\Trite.Cement.Example.pdb

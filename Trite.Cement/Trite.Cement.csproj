@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ED24795E-7A2D-40E0-B867-9A163764C486}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Trite.Cement</RootNamespace>
+    <AssemblyName>Trite.Cement</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cementery.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="TypeReader.cs" />
+    <Compile Include="TypeSerializer.cs" />
+    <Compile Include="TypeWriter.cs" />
+    <Compile Include="Contexts\ContextFactory.cs" />
+    <Compile Include="Contexts\FileAssemblyContext.cs" />
+    <Compile Include="Contexts\IAssemblyContext.cs" />
+    <Compile Include="Contexts\MergedAssemblyContext.cs" />
+    <Compile Include="Contexts\MultipleAssemblyContext.cs" />
+    <Compile Include="Contexts\SingleAssemblyContext.cs" />
+    <Compile Include="Formats\Binary\BinaryFormat.cs" />
+    <Compile Include="Formats\Binary\BinaryReader.cs" />
+    <Compile Include="Formats\Binary\BinaryWriter.cs" />
+    <Compile Include="Formats\Format.cs" />
+    <Compile Include="Formats\IFormat.cs" />
+    <Compile Include="Formats\IFormatReader.cs" />
+    <Compile Include="Formats\IFormatWriter.cs" />
+    <Compile Include="Formats\None\FormatlessFormat.cs" />
+    <Compile Include="Formats\None\FormatlessReader.cs" />
+    <Compile Include="Formats\None\FormatlessWriter.cs" />
+    <Compile Include="Formats\None\InvalidFormatException.cs" />
+    <Compile Include="Formats\Xml\XmlFormat.cs" />
+    <Compile Include="Formats\Xml\XmlReader.cs" />
+    <Compile Include="Formats\Xml\XmlWriter.cs" />
+    <Compile Include="Implementations.cs" />
+    <Compile Include="ITypeReader.cs" />
+    <Compile Include="ITypeWriter.cs" />
+    <Compile Include="Layouts\AutomaticLayoutSerializer.cs" />
+    <Compile Include="Layouts\BaseElement.cs" />
+    <Compile Include="Layouts\BaseTypes\BooleanElement.cs" />
+    <Compile Include="Layouts\BaseTypes\ByteElement.cs" />
+    <Compile Include="Layouts\BaseTypes\CharElement.cs" />
+    <Compile Include="Layouts\BaseTypes\DoubleElement.cs" />
+    <Compile Include="Layouts\BaseTypes\FloatElement.cs" />
+    <Compile Include="Layouts\BaseTypes\GuidElement.cs" />
+    <Compile Include="Layouts\BaseTypes\IntegerElement.cs" />
+    <Compile Include="Layouts\BaseTypes\LongElement.cs" />
+    <Compile Include="Layouts\BaseTypes\ShortElement.cs" />
+    <Compile Include="Layouts\BaseTypes\StringElement.cs" />
+    <Compile Include="Layouts\BaseTypes\TypeElement.cs" />
+    <Compile Include="Layouts\Collections\ArrayElement.cs" />
+    <Compile Include="Layouts\Collections\CollectionBaseElement.cs" />
+    <Compile Include="Layouts\Collections\CollectionElement.cs" />
+    <Compile Include="Layouts\Collections\CollectionWithDerivableChildrenElement.cs" />
+    <Compile Include="Layouts\Collections\DerivableCollectionElement.cs" />
+    <Compile Include="Layouts\Collections\DerivableCollectionWithDerivableChildrenElement.cs" />
+    <Compile Include="Layouts\Collections\Scope.cs" />
+    <Compile Include="Layouts\Generation\DerivableAttribute.cs" />
+    <Compile Include="Layouts\Generation\DerivableElementsAttribute.cs" />
+    <Compile Include="Layouts\Generation\ElementTagAttribute.cs" />
+    <Compile Include="Layouts\Generation\ExcludeAttribute.cs" />
+    <Compile Include="Layouts\Generation\LayoutGenerator.cs" />
+    <Compile Include="Layouts\Generation\TagAttribute.cs" />
+    <Compile Include="Layouts\IElementContainer.cs" />
+    <Compile Include="Layouts\ILayoutElement.cs" />
+    <Compile Include="Layouts\LayoutSerializer.cs" />
+    <Compile Include="Layouts\Link\LinkableElement.cs" />
+    <Compile Include="Layouts\PersistenceLayout.cs" />
+    <Compile Include="Layouts\References\DerivableReferenceElement.cs" />
+    <Compile Include="Layouts\References\ReferenceElement.cs" />
+    <Compile Include="Layouts\SectionElement.cs" />
+    <Compile Include="Link\AutomaticLinker.cs" />
+    <Compile Include="Link\CreationType.cs" />
+    <Compile Include="Link\DuplicateBehavior.cs" />
+    <Compile Include="Link\HashLinker.cs" />
+    <Compile Include="Link\ILinkable.cs" />
+    <Compile Include="Link\Linker.cs" />
+    <Compile Include="Link\ManuallyLinkedAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serializer.cs" />
+    <Compile Include="Serialization\BooleanSerializer.cs" />
+    <Compile Include="Serialization\ByteSerializer.cs" />
+    <Compile Include="Serialization\CharSerializer.cs" />
+    <Compile Include="Serialization\DoubleSerializer.cs" />
+    <Compile Include="Serialization\FloatSerializer.cs" />
+    <Compile Include="Serialization\GuidSerializer.cs" />
+    <Compile Include="Serialization\IntegerSerializer.cs" />
+    <Compile Include="Serialization\LongSerializer.cs" />
+    <Compile Include="Serialization\ShortSerializer.cs" />
+    <Compile Include="Serialization\StringSerializer.cs" />
+    <Compile Include="Utility\ActionDisposable.cs" />
+    <Compile Include="Utility\Cache.cs" />
+    <Compile Include="Utility\IComputationProvider.cs" />
+    <Compile Include="Utility\PropertyHelper.cs" />
+    <Compile Include="Utility\Reflection.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
